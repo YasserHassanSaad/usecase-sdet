@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="form.js"></script>
+    <title>Emirates Team Portal</title>
+</head>
+<body>
+    <h1>Our Team Portal</h1>
+    
+    <!-- Search Form -->
+    <form id="searchForm">
+        <label for="searchTerm">Search by App Name:</label>
+        <input type="text" id="searchTerm" name="searchTerm">
+        <button type="button" onclick="searchData()">Search</button>
+        <!--JavaScript -->
+    </form>
+    
+    <!-- Display Search Results -->
+    <div id="searchResults"></div>
+    
+    <!-- Delete Form -->
+    <form id="deleteForm">
+        <label for="deleteId">Delete Record by ID:</label>
+        <input type="text" id="deleteId" name="deleteId">
+        <button type="button" onclick="deleteRecord()">Delete</button>
+    </form>
+    
+    <!-- Update Form -->
+    <form id="updateForm">
+        <label for="updateId">Update Record by ID:</label>
+        <input type="text" id="updateId" name="updateId">
+        <label for="newOwner">New Owner:</label>
+        <input type="text" id="newOwner" name="newOwner">
+        <label for="newIsValid">New isValid:</label>
+        <input type="text" id="newIsValid" name="newIsValid">
+        <button type="button" onclick="updateRecord()">Update</button>
+    </form>
+</body>
+</html>
